@@ -1,5 +1,5 @@
 # jquery
-some projects with using query library
+some projects with using jquery library
 
 # delivery form
 
