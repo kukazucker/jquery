@@ -1,0 +1,77 @@
+/* CSS main elements of the site */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');  /* logo font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: linear-gradient(135deg,#f8f8f8 , #e8effa );
+}
+
+header {
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 2px solid #233eb6; 
+}
+
+.logo {                     /* for the logo: if it is an image */
+    width: 100px;
+    height: 60px;
+}
+
+.nav__block li {
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Lato';
+    background-color: inherit;
+}
+
+.form {
+    height: 1000px;
+    border-bottom: 1px solid #233eb6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+}
+
+.form.box {
+    width: 50%;
+    float: left;
+}
+
+.form.configurate {
+    width: 50%;
+    float: right;
+}
+
+.footer {
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.button {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    font-size: 19px;
+    
+}
+
+.symbolArrow:after {
+    content: ' \02D1';
+}
