@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="CSS/counter.css">
     </head>
     <body>
-        <header>
+        <header>                                                         <!-- header of the site -->
             <div class="header__logo">YourLogo</div>
             <nav class="nav__block main">
                 <ul>
@@ -31,8 +31,8 @@
                 </ul>
             </nav>
         </header>
-        <div id="form" class="form">
-            <div id="box" class="form box">
+        <div id="form" class="form">                                    <!-- body of the site -->
+            <div id="box" class="form box">                             <!-- animated box -->
                 <div id="box_animation" class="box_animation">
                     <div class="lid open"></div>
                     <div class="case"></div>
@@ -69,10 +69,10 @@
                     </div>
                 </div>  
             </div>
-            <form id="configurate" class="form configurate">
+            <form id="configurate" class="form configurate">            <!-- form for the delivery -->
                 <div id="selector" class="selector">
                     <span class="bigWords">Form:</span>
-                    <div id="typePack" class="mainBlock input_form ">
+                    <div id="typePack" class="mainBlock input_form ">    <!-- select item -->
                         <div class="mainBlock__area">
                             <span id="mainBlock__current" value="pack">Pack's Type</span><span class="select__icon">⌄</span>
                         </div>
@@ -82,7 +82,7 @@
                             <div class="select__item">EXPRESS</div>
                         </div>
                     </div>
-                    <div class="twoButtons">
+                    <div class="twoButtons">                            <!-- info about person's addresses-->
                         <div id="list_name" class="mainBlock input_form ">
                             <p>Sender's Address:</p>
                             <div class="mainBlock__area">
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="twoButtons">
+                    <div class="twoButtons">                            <!-- info about person's names-->
                         <div id="list_name" class="mainBlock input_form ">
                             <p>From:</p>
                             <div class="mainBlock__area">
@@ -110,14 +110,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="twoButtons">
+                    <div class="twoButtons">                            <!-- values of the package -->
                         <div id="list_name" class="mainBlock input_form btn">
                             <div class="mainBlock__area">
                                 <button class="select__btnp" id="plus" type="button">+</button>
                             </div>
                         </div>
-                        <div id="list_name" class="mainBlock input_form ">
-                            <p class="text_withValue">Weight:</p>
+                        <div id="list_name" class="mainBlock input_form ">   <!-- weight -->
+                            <p class="text_withValue">Weight:</p>   
                             <div class="mainBlock__area form_values">
                                 <input class="text_withValue" id="text" maxlength="6" value="0.00"></input>
                                 <span class="nameValue show_kg">kg</span>
@@ -135,7 +135,7 @@
                                 <button class="select__btnp" id="plus1" type="button">+</button>
                             </div>
                         </div>
-                        <div id="list_name" class="mainBlock input_form">
+                        <div id="list_name" class="mainBlock input_form">    <!-- volume -->
                             <p class="text_withValue">Volume:</p>
                             <div class="mainBlock__area form_values">
                                 <input class="text_withValue" id="text1" maxlength="5" value="0.00"></input>
@@ -147,8 +147,8 @@
                                 <button class="select__btnp" id="minus1" type="button">-</button>
                             </div>
                         </div>
-                    </div>
-                    <div id="list_special" class="mainBlock input_form">
+                    </div>  
+                    <div id="list_special" class="mainBlock input_form">    <!-- extra Services -->
                         <div class="mainBlock__area_extra">
                             <label class="checkbox form_area">
                                 <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId1">
@@ -173,9 +173,9 @@
                                 <span id="checkbox__box_4">with tickets</span> 
                             </label>
                         </div>
-                    </div>
-                    <div class="twoButtons">
-                        <div id="list_name" class="mainBlock input_form">
+                    </div>      
+                    <div class="twoButtons">                            
+                        <div id="list_name" class="mainBlock input_form">   <!-- control keys for the form -->
                             <div class="mainBlock__area">
                                 <button class="select__btn" type="reset">Reset</button>
                             </div>  
@@ -186,7 +186,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="twoButtons buttons">
+                    <div class="twoButtons buttons">                        <!-- price and burron next -->
                         <div class="together">
                             <span class="bigWords">Prise: </span>
                             <input class="boldWords" id="text" maxlength="6" value="0.00 $" readonly></input>   
@@ -200,7 +200,7 @@
                 </div>
             </div>
         </form>
-        <div id="footer" class="footer">    
+        <div id="footer" class="footer">                                    <!-- footer -->
             <div class="grey_text">
                 <span class="">Copyright 2022</span>
             </div>    
