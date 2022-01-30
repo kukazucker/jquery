@@ -1,0 +1,22 @@
+.grey_text {
+    font-family: "Lato", sans-serif;
+    color: rgb(173, 171, 171);
+}
+
+.bigWords {
+    font-family: "Lato", sans-serif;
+    color: rgb(28, 32, 49);
+    font-size: 40px;
+}
+
+.boldWords {
+    font-family: "Lato", sans-serif;
+    color: rgb(20, 3, 117);
+    font-weight: bold;
+    font-size: 30px;
+    background: inherit;
+    border: none;
+    position: absolute;
+    bottom: 56px;
+    margin-left: 120px;
+}

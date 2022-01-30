@@ -1,0 +1,121 @@
+/* main box */
+
+.box_animation {
+    height: 550px;
+    width: 550px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:100px;
+    z-index: 0;
+}
+
+.thing {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 15px;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.list_on_box {
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    width: 40%;
+    height: 50%;
+    background-color: white;
+    border-radius: 15px;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.list_on_box p {
+    text-align: left;
+    font-size: 15px;
+    margin-top: 18px;
+    margin-left: 5px;
+    background-color: inherit;
+    color: black;
+}
+
+.thing p {
+    text-align: center;
+    font-size: 30px;
+    background-color: inherit;
+    color: black;
+}
+
+.case {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top: 550px solid #2469eb;
+    border-left: 275px solid #1736c0;
+    z-index: 3;
+}
+
+/* cup of the case */
+
+.cup {
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #2f4ed4;
+    z-index: 2;
+    border-radius: 3px;
+    transition: transform 0.5s linear;
+    transition-delay: 0.5s;
+}
+
+.cup.Left {
+    left: 3px;
+    transform-origin: left;
+}
+
+.cup.Right {
+    right: 3px;
+    transform-origin: right;
+}
+
+.lid {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-origin: top;
+    transition: transform 0.75s linear;
+}
+
+.lid.open {
+    border-top: 200px solid #2f4ed4;
+    transform: rotateX(90deg);
+    transition-delay: 0.5s;
+    z-index: 1;
+}
+
+/* animatoins */
+
+.form:hover .lid.open {
+    transform: rotateX(180deg);
+    transition-delay: 0.25s;
+}
+
+.form:hover .thing {
+    transform: translateY(-160px);
+    transition-delay: 0.5s;
+}
+
+.form:hover .cup.Left {
+    transform: rotate(-170deg);
+}
+
+.form:hover .cup.Right {
+    transform: rotate(170deg);
+}

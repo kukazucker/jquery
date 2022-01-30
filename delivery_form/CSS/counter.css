@@ -1,0 +1,23 @@
+#counter {
+    width: 100%;
+    height: 80%;
+    background-color: inherit;
+}
+
+.counter_btn {
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+.select__btnp {
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    font-size: 27px;
+    border: 0;
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+}

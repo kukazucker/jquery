@@ -1,0 +1,17 @@
+.header__logo {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    background-color: inherit;
+    color: #233eb6;
+    padding: 4px;
+    border: 2px solid #233eb6;
+}
+
+.nav__block.main li {
+    padding: 0px 40px;
+}
+
+.nav__block.extra li {
+    padding: 0px 10px;
+}
