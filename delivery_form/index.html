@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta id="themecolor" name="theme-color" content="#233eb6">      <!-- the header color of Safari (MacOS) -->
+        <title>Mail | Box</title>
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/box.css">
+        <link rel="stylesheet" href="CSS/header-items.css">
+        <link rel="stylesheet" href="CSS/tags_change.css">
+        <link rel="stylesheet" href="CSS/text.css">
+        <link rel="stylesheet" href="CSS/form.css">
+        <link rel="stylesheet" href="CSS/counter.css">
+    </head>
+    <body>
+        <header>
+            <div class="header__logo">YourLogo</div>
+            <nav class="nav__block main">
+                <ul>
+                    <li><a href="#">Send</a></li>
+                    <li><a href="#">Get</a></li>
+                    <li><a href="#">Pays</a></li>
+                    <li><a href="#">Online-Service</a></li>
+                </ul>
+            </nav>
+            <nav class="nav__block extra">
+                <ul>
+                    <li><a href="#" class="extra">Locations</a></li>
+                    <li><a href="#" class="extra">Help</a></li>
+                    <li><a href="#" class="extra">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="form" class="form">
+            <div id="box" class="form box">
+                <div id="box_animation" class="box_animation">
+                    <div class="lid open"></div>
+                    <div class="case"></div>
+                    <div class="cup Left"></div>
+                    <div class="cup Right"></div>
+                    <div class="thing">
+                        <div id="" class="mainBlock box">
+                            <p>Plus:</p>
+                            <div class="mainBlock__area_extra">
+                                <label class="checkbox box">
+                                    <span id="text_box_1" class="checkbox_box1"></span>
+                                </label>
+                                <label class="checkbox box">
+                                    <span id="text_box_2" class="checkbox_box2"></span>
+                                </label>
+                            </div>
+                            <div class="mainBlock__area_extra">
+                                <label class="checkbox box">
+                                    <span id="text_box_3" class="checkbox_box3"></span>
+                                </label>
+                                <label class="checkbox box">
+                                    <span id="text_box_4" class="checkbox_box4"></span> 
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_on_box">
+                        <p>Send: <span id="typePack0">Pack's Type</span></p>
+                        <p>From: <span id="personFrst"></span></p> 
+                        <p>To: <span id="personScnd"></span></p>
+                        <p>Weight: <span id="weight">0.00</span><span> kg</span></p>
+                        <p>Volume: <span id="volume">0.00</span><span> &#13221</span></span></p>
+                        <p>Price: <span id="price">0.00$</span></p>
+                    </div>
+                </div>  
+            </div>
+            <form id="configurate" class="form configurate">
+                <div id="selector" class="selector">
+                    <span class="bigWords">Form:</span>
+                    <div id="typePack" class="mainBlock input_form ">
+                        <div class="mainBlock__area">
+                            <span id="mainBlock__current" value="pack">Pack's Type</span><span class="select__icon">⌄</span>
+                        </div>
+                        <div class="mainBlock__selectBody">
+                            <div class="select__item">USUAL</div>
+                            <div class="select__item">SPEEDED</div>
+                            <div class="select__item">EXPRESS</div>
+                        </div>
+                    </div>
+                    <div class="twoButtons">
+                        <div id="list_name" class="mainBlock input_form ">
+                            <p>Sender's Address:</p>
+                            <div class="mainBlock__area">
+                                <input class="text" id="text_FAdress" placeholder="Full Address"></input>
+                            </div>  
+                        </div>
+                        <div id="list_name" class="mainBlock input_form ">
+                            <p>Getter's Address:</p>
+                            <div class="mainBlock__area">
+                                <input class="text" id="text_SAdress" placeholder="Full Address"></input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="twoButtons">
+                        <div id="list_name" class="mainBlock input_form ">
+                            <p>From:</p>
+                            <div class="mainBlock__area">
+                                <input class="text" id="text_Person1" required placeholder="Full Name"></input>
+                            </div>  
+                        </div>
+                        <div id="list_name" class="mainBlock input_form ">
+                            <p>To:</p>
+                            <div class="mainBlock__area">
+                                <input class="text" id="text_Person2" required placeholder="Full Name"></input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="twoButtons">
+                        <div id="list_name" class="mainBlock input_form btn">
+                            <div class="mainBlock__area">
+                                <button class="select__btnp" id="plus" type="button">+</button>
+                            </div>
+                        </div>
+                        <div id="list_name" class="mainBlock input_form ">
+                            <p class="text_withValue">Weight:</p>
+                            <div class="mainBlock__area form_values">
+                                <input class="text_withValue" id="text" maxlength="6" value="0.00"></input>
+                                <span class="nameValue show_kg">kg</span>
+                            </div>  
+                        </div>
+                        <div id="list_name" class="mainBlock input_form btn">
+                            <div class="mainBlock__area">
+                                <button class="select__btnp" id="minus" type="button">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="twoButtons">
+                        <div id="list_name" class="mainBlock input_form btn">
+                            <div class="mainBlock__area">
+                                <button class="select__btnp" id="plus1" type="button">+</button>
+                            </div>
+                        </div>
+                        <div id="list_name" class="mainBlock input_form">
+                            <p class="text_withValue">Volume:</p>
+                            <div class="mainBlock__area form_values">
+                                <input class="text_withValue" id="text1" maxlength="5" value="0.00"></input>
+                                 <span class="nameValue show_m3">&#13221;</span>
+                            </div> 
+                        </div>
+                        <div id="list_name" class="mainBlock input_form btn">
+                            <div class="mainBlock__area">
+                                <button class="select__btnp" id="minus1" type="button">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="list_special" class="mainBlock input_form">
+                        <div class="mainBlock__area_extra">
+                            <label class="checkbox form_area">
+                                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId1">
+                                <div class="checkbox__box"></div>
+                                <span id="checkbox__box_1">Dangerous</span>
+                            </label>
+                            <label class="checkbox form_area">
+                                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId2">
+                                <div class="checkbox__box"></div>
+                                <span id="checkbox__box_2">Animals</span>
+                            </label>
+                        </div>
+                        <div class="mainBlock__area_extra">
+                            <label class="checkbox form_area">
+                                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId3">
+                                <div class="checkbox__box"></div>
+                                <span id="checkbox__box_3">just Avia</span>
+                            </label>
+                            <label class="checkbox form_area">
+                                <input class="checkbox__input" type="checkbox" name="myCheckboxName" id="myCheckboxId4">
+                                <div class="checkbox__box"></div>
+                                <span id="checkbox__box_4">with tickets</span> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="twoButtons">
+                        <div id="list_name" class="mainBlock input_form">
+                            <div class="mainBlock__area">
+                                <button class="select__btn" type="reset">Reset</button>
+                            </div>  
+                        </div>
+                        <div id="list_name" class="mainBlock input_form">
+                            <div class="mainBlock__area">
+                                <button class="select__btn" type="button" id="btn_configurate">CALCULATE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="twoButtons buttons">
+                        <div class="together">
+                            <span class="bigWords">Prise: </span>
+                            <input class="boldWords" id="text" maxlength="6" value="0.00 $" readonly></input>   
+                        </div>
+                        <div id="list_name" class="mainBlock input_form btn">
+                            <div class="mainBlock__area">
+                                <button class="select__btn" type="submit">Next</button>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="footer" class="footer">    
+            <div class="grey_text">
+                <span class="">Copyright 2022</span>
+            </div>    
+            <div class="nav__block extra">
+                <ul>
+                    <li><a href="#" class="nav__footer">Information</a></li>
+                    <li><a href="#" class="nav__footer">Job</a></li>
+                    <li><a href="#" class="nav__footer">Press</a></li>
+                    <li><a href="#" class="nav__footer">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="resources/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/select.js"></script>
+        <script src="js/configurate.js"></script>
+        <script src="js/insertText.js"></script>
+        <script src="js/formPrice.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
